@@ -1,1 +1,1 @@
-# vibe_mock_server_judytesttest
+# vibe_mock_server_judytesttesterd및 api 명세서 작성중..
