@@ -1,1 +1,1 @@
-# vibe_mock_server_judytesttesterd및 api 명세서 작성중..7/22까지 erd 설계 api 명세서 작성 최대한 끝내기api 명세서 및 디비에 데이터 넣기..
+# vibe_mock_server_judytesttesterd및 api 명세서 작성중..7/22까지 erd 설계 api 명세서 작성 최대한 끝내기api 명세서 및 디비에 데이터 넣기..자유..열심히 하겠습니다.! 화이팅.!!!
