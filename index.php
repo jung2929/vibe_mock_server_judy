@@ -93,7 +93,7 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r)
     $r->addRoute('GET', '/genre-new-album/{genreId}', ['IndexController', 'getGenreNewAlbum']);
     $r->addRoute('GET', '/new-album', ['IndexController', 'getNewAlbum']);
     $r->addRoute('GET', '/new-album/plus', ['IndexController', 'getNewAlbumPlus']);
-
+//
 
 //    $r->addRoute('GET', '/users', 'get_all_users_handler');
 //    // {id} must be a number (\d+)
