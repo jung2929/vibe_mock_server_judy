@@ -86,13 +86,27 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r)
 
 
    // $r->addRoute('GET', '/data', ['MainController', 'getDataList']);
+    //음악차트 관련
+    $r->addRoute('GET', '/today-top-music-list', ['IndexController', 'getMusicList']);
+    $r->addRoute('GET', '/recent-music-list/{userId}', ['IndexController', 'getRecentMusicList']);
+    $r->addRoute('GET', '/billborad-hot-100', ['IndexController', 'getBillboarHotMusicList']);
+
+    //앨범 상세조회
+    $r->addRoute('GET', '/album-detail/{albumId}', ['IndexController', 'getAlbumDetail']);
 
     $r->addRoute('GET', '/music-genre-list', ['IndexController', 'getGenreList']);
-    $r->addRoute('GET', '/today-top-music-list', ['IndexController', 'getMusicList']);
+
     $r->addRoute('GET', '/music-file/{musicId}', ['IndexController', 'getMusicFile']);
     $r->addRoute('GET', '/genre-new-album/{genreId}', ['IndexController', 'getGenreNewAlbum']);
     $r->addRoute('GET', '/new-album', ['IndexController', 'getNewAlbum']);
     $r->addRoute('GET', '/new-album/plus', ['IndexController', 'getNewAlbumPlus']);
+    $r->addRoute('GET', '/artist-list', ['IndexController', 'getArtistList']);
+
+    $r->addRoute('GET', '/music-video-top-50', ['IndexController', 'getMusicVideoTopList']);
+
+    #앨범 노래 목록 리스트 조회 API
+    $r->addRoute('GET', '/album-music-list/{albumId}', ['IndexController', 'getAlbumMusicList']);
+
 //
 
 //    $r->addRoute('GET', '/users', 'get_all_users_handler');
