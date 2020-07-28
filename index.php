@@ -107,6 +107,23 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r)
     #앨범 노래 목록 리스트 조회 API
     $r->addRoute('GET', '/album-music-list/{albumId}', ['IndexController', 'getAlbumMusicList']);
 
+    #뉴스 정보 뿌리기 API
+    $r->addRoute('GET', '/news-list', ['IndexController', 'getNewsList']);
+
+    #뉴스 Url 뿌리기 API
+    $r->addRoute('GET', '/news/{newsId}', ['IndexController', 'getNewsUrl']);
+
+    #국내 급 상승 API
+    $r->addRoute('GET', '/interior-country-growth', ['IndexController', 'getInteriorCountryGrowth']);
+
+    #노래 검색 API
+    $r->addRoute('GET', '/searching-music', ['IndexController', 'gerSearchingMusic']);
+
+    #유저 관련 API
+
+
+
+
 //
 
 //    $r->addRoute('GET', '/users', 'get_all_users_handler');
